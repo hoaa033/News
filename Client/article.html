@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>The News Paper - News &amp; Lifestyle Magazine </title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+          href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="index.html"><img src="img/core-img/logo.png"
+                                         alt=""></a>
+                            </div>
+
+                            <!-- Login Search Area -->
+                            <div class="login-search-area d-flex align-items-center">
+                                <!-- Search Form -->
+                                <div class="search-form">
+                                    <form action="#"
+                                          method="post">
+                                        <input type="search"
+                                               name="search"
+                                               class="form-control"
+                                               placeholder="Search">
+                                        <button type="submit"><i class="fa fa-search"
+                                               aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Breaking News Widget -->
+                    <div class="breaking-news-area d-flex align-items-center">
+                        <div class="news-title">
+                            <p>Breaking News</p>
+                        </div>
+                        <div id="breakingNewsTicker"
+                             class="ticker">
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                <li><a href="#">Welcome to Colorlib Family.</a></li>
+                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Breaking News Widget -->
+                    <div class="breaking-news-area d-flex align-items-center mt-15">
+                        <div class="news-title title2">
+                            <p>International</p>
+                        </div>
+                        <div id="internationalTicker"
+                             class="ticker">
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                <li><a href="#">Welcome to Colorlib Family.</a></li>
+                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Add -->
+                <div class="col-12 col-lg-4">
+                    <div class="hero-add">
+                        <a href="#"><img src="img/bg-img/hero-add.gif"
+                                 alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-area section-padding-0-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="blog-posts-area">
+
+                        <!-- Single Featured Post -->
+                        <div class="single-blog-post featured-post single-post">
+                            <div class="post-thumb">
+                                
+                            </div>
+                            <div class="post-data">
+                                <a href="..."
+                                   class="post-catagory">${res.category}</a>
+                                <h6 class="post-title">
+                                    ${res.title}
+                                </h6>
+                                <div class="post-meta">
+                                    <p class="post-author">
+                                        By <a href="javascript:void(0);"
+                                           class="post-author-name">${res.authors}</a>
+                                    </p>
+                                    <p class="post-content">${res.content}</p>
+
+                                    <div class="newspaper-post-like d-flex align-items-center justify-content-between">
+                                        <!-- Tags -->
+                                        <div class="newspaper-tags d-flex">
+                                            <span>Tags:</span>
+                                            <ul id="post-tags-list"
+                                                class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <!-- Post Like & Post Comment -->
+                                        <div class="d-flex align-items-center post-like--comments">
+                                            <a href="#"
+                                               class="post-like">
+                                                <img src="img/core-img/like.png"> <span>392</span>
+                                            </a>
+                                            <a href="#comment-section"
+                                               class="post-comment">
+                                                <img src="img/core-img/chat.png"> <span>${res.comments.length}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Author -->
+                        <div class="blog-post-author d-flex">
+                            <div class="author-thumbnail">
+                                
+                            </div>
+                        </div>
+
+                        <div class="section-heading">
+                            <h6>Related</h6>
+                        </div>
+                        <div id="related-articles-list"
+                             class="row">
+
+                        </div>
+
+                        <!-- Comment Area Start -->
+                        <div id="comment-section"
+                             class="comment_area clearfix">
+                            <h5 class="title"></h5>
+
+                            <ol class="comments-list">
+                            </ol>
+                        </div>
+
+                        <div class="post-a-comment-area section-padding-80-0">
+                            <h4>Leave a comment</h4>
+
+                            <!-- Reply Form -->
+                            <div class="contact-form-area">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input id="email"
+                                               type="email"
+                                               class="form-control"
+                                               placeholder="Email"
+                                               required />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea id="message"
+                                                  class="form-control"
+                                                  cols="30"
+                                                  rows="10"
+                                                  placeholder="Message"
+                                                  required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button id="btn-send-comment"
+                                                class="btn newspaper-btn mt-30 w-100">Send</button>
+                                        <span id="errmsg"
+                                              class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="blog-sidebar-area">
+
+                        <!-- Latest Posts Widget -->
+                        <div id="posts-widget"
+                             class="latest-posts-widget mb-50">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Footer Logo -->
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/core-img/logo.png"
+                                         alt=""></a>
+                            </div>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="mailto:contact@youremail.com">contact@youremail.com</a></li>
+                                <li><a href="tel:+4352782883884">+43 5278 2883 884</a></li>
+                                <li><a href="http://yoursitename.com">www.yoursitename.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">Politics</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Markets</a></li>
+                                <li><a href="#">Tech</a></li>
+                                <li><a href="#">Luxury</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">Featured</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Football</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Motorsport</a></li>
+                                <li><a href="#">Horseracing</a></li>
+                                <li><a href="#">Equestrian</a></li>
+                                <li><a href="#">Sailing</a></li>
+                                <li><a href="#">Skiing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">FAQ</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Aviation</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Traveller</a></li>
+                                <li><a href="#">Destinations</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Food/Drink</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Partner Hotels</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="footer-widget-area mt-80">
+                            <!-- Title -->
+                            <h4 class="widget-title">+More</h4>
+                            <!-- List -->
+                            <ul class="list">
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Arts</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Luxury</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <p>  
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                         
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+        function getQueryParams() {
+            const vars = [];
+            let hash = '';
+            const hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (let i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        function fetchArticle(id, successCallback) {
+            $.get({
+                url: `http://localhost:3000/articles/${id}`,
+                success: successCallback
+            });
+        }
+
+        $(document).ready(() => {
+            fetchArticle(getQueryParams()['id'], res => {
+                const $post = $('.single-post');
+                $post.find('.post-title').text(res.title);
+                $post.find('.post-catagory').attr('href', `index.html?cat=${res.category}`).text(res.category);
+                $post.find('.post-author-name').text(res.authors);
+                $post.find('.post-content').html(res.content);
+                $post.find('.post-like span').text(Math.floor(Math.random() * 100) + 1);
+                $post.find('.post-comment span').text(res.comments.length);
+
+                $('.author-name').html(`${res.authors}, <span>Professional Writer</span>`);
+
+                const $tagsList = $('#post-tags-list');
+                const tags = res.tags.split(',');
+
+                for (let i = 0; i < tags.length; i++) {
+                    const tag = tags[i].trim();
+                    const tagTemplate = i === tags.length - 1
+                        ? `<li class="list-inline-item"><a href="index.html?tag=${tag}">${tag}</a></li>`
+                        : `<li class="list-inline-item m-0"><a href="index.html?tag=${tag}">${tag}, </a></li>`;
+
+                    $tagsList.append(tagTemplate);
+                }
+
+                res.comments.sort((a, b) => a.id > b.id ? - 1 : 1);
+
+                const $commentSection = $('#comment-section');
+                $commentSection.find('.title').text(res.comments.length + ' Comments');
+
+                const $commentsList = $commentSection.find('.comments-list');
+                res.comments.forEach(cm => {
+                    const template =
+                        `<li class="single_comment_area">
+                                <div class="comment-content d-flex">
+                                    <div class="comment-author">
+                                        
+                                    </div>
+                                    <div class="comment-meta">
+                                        <a class="post-author">${cm.email}</a>
+                                        <p>${cm.body}</p>
+                                    </div>
+                                </div>
+                            </li>`;
+                    $commentsList.append(template);
+                });
+
+                res.relatedArticleIds.forEach(id => {
+                    fetchArticle(id, res => {
+                        const $rltArticlesList = $('#related-articles-list');
+
+                        const template =
+                            `<div class="col-12 col-md-6">
+                                <div class="single-blog-post style-3 mb-80">
+                                    <div class="post-thumb">
+                                        <a href="article.html?id=${res.id}">
+                                            <
+                                        </a>
+                                    </div>
+                                    <div class="post-data">
+                                        <a href="index.html?cat=${res.category}"
+                                           class="post-catagory">${res.category}</a>
+                                        <a href="article.html?id=${res.id}"
+                                           class="post-title">
+                                            <h6>${res.title}</h6>
+                                        </a>
+                                        <div class="post-meta d-flex align-items-center">
+                                            <a href="javascript:void(0);"
+                                               class="post-like">
+                                               <img src="img/core-img/like.png" /> <span>${Math.floor(Math.random() * 100) + 1}</span>
+                                            </a>
+                                            <a href="javascript:void(0);"
+                                               class="post-comment"><img src="img/core-img/chat.png"
+                                                     alt=""> <span>${res.comments.length}</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`;
+                        $rltArticlesList.append(template);
+                    });
+                });
+            });
+
+            $.get({
+                url: 'http://localhost:3000/articles/each-of-categories',
+                success: res => {
+                    res.data.forEach(item => {
+                        const template =
+                            `<div class="single-blog-post small-featured-post d-flex">
+                                <div class="post-thumb">
+                                    
+                                </div>
+                                <div class="post-data">
+                                    <a href="index.html?cat=${item.category}"
+                                        class="post-catagory">${item.category}</a>
+                                    <div class="post-meta">
+                                        <a href="article.html?id=${item.id}"
+                                            class="post-title">
+                                            <h6>${item.title}</h6>
+                                        </a>
+                                        <p class="post-date">
+                                            <span>${new Date(item.publishedDate).toISOString().split('T')[0]}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>`;
+                        $('#posts-widget').append(template);
+                    });
+                }
+            });
+
+            $('#btn-send-comment').on('click', e => {
+                e.preventDefault();
+
+                const email = $('#email').val();
+                const msg = $('#message').val();
+
+                if (!email || !msg) {
+                    return;
+                }
+
+                $.post({
+                    url: `http://localhost:3000/articles/${getQueryParams()['id']}/comments`,
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        email, message: msg
+                    }),
+                    success: res => {
+                        location.reload();
+                    },
+                    error: () => {
+                        $('#errmsg').text('cannot comment, please contact administrator');
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

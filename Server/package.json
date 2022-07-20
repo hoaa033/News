@@ -1,0 +1,34 @@
+{
+  "name": "iws-finalex-1801040087",
+  "version": "1.0.0",
+  "description": "",
+  "author": "hoaaaa",
+  "license": "MIT",
+  "scripts": {
+    "beautify": "prettier --no-editorconfig --config .prettierrc --ignore-path ../.gitignore --write '**/*.js'",
+    "start": "node -r esm -r module-alias/register src/main",
+    "start:dev": "nodemon -r esm -r module-alias/register --watch src src/main.js",
+    "start:debug": "nodemon -r esm -r module-alias/register --inspect-brk --watch src src/main.js",
+    "lint": "eslint --ignore-path ../.gitignore ."
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "esm": "^3.2.25",
+    "module-alias": "^2.2.2",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "lowdb": "^1.0.0"
+  },
+  "_moduleAliases": {
+    "@": "src"
+  }
+}
